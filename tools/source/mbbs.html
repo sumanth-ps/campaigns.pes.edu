@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBBS @ PES University | Electronic City Campus, Bengaluru</title>
+<meta name="description" content="UGC- and NMC-approved MBBS at PES University's Electronic City campus — a 1000-bed teaching hospital, a 650-bed specialty & super-specialty hospital, and a legacy in medical education since 2001.">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/logo-and-images/favicon.ico" type="image/x-icon" />
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#00264d; --navy-light:#004080; --navy-pale:#e9eff6; --navy-pale-2:#dbe5f0;
+    --orange:#ef7e1a; --orange-light:#ff9a45; --orange-pale:#fef1e2;
+    --ink:#0a1626; --muted:#5c6b80; --paper:#ffffff; --paper-2:#f6f8fb;
+    --line:#e2e8f0; --line-strong:#cbd6e3;
+    --display:"Playfair Display","Times New Roman",serif; --body:"Noto Sans",-apple-system,sans-serif;
+    --shadow-sm:0 2px 10px rgba(0,38,77,0.06); --shadow-md:0 12px 34px rgba(0,38,77,0.10); --shadow-lg:0 24px 60px rgba(0,38,77,0.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ::selection{background:var(--orange);color:#fff;}
+  :focus-visible{outline:2px solid var(--orange);outline-offset:3px;}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 40px;}
+
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:9px;}
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+  .eyebrow.center{justify-content:center;margin-left:auto;margin-right:auto;}
+
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;padding:14px 26px;border-radius:999px;border:1.5px solid transparent;transition:all .25s ease;white-space:nowrap;cursor:pointer;}
+  .btn.solid{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(239,126,26,0.32);}
+  .btn.solid:hover{background:#d96e0f;transform:translateY(-2px);box-shadow:0 12px 26px rgba(239,126,26,0.4);}
+  .btn.outline{border-color:var(--navy);color:var(--navy);}
+  .btn.outline:hover{background:var(--navy);color:#fff;transform:translateY(-2px);}
+  .btn.outline-light{border-color:rgba(255,255,255,0.6);color:#fff;}
+  .btn.outline-light:hover{background:#fff;color:var(--navy);}
+  .btn.sm{padding:10px 20px;font-size:13px;}
+
+  /* NAV */
+  header.site{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;background:transparent;transition:background .35s ease, box-shadow .35s ease, padding .35s ease;}
+  header.site.scrolled{background:rgba(255,255,255,0.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line), 0 8px 24px rgba(0,38,77,0.06);padding:13px 40px;}
+  .logo{display:flex;align-items:center;gap:11px;}
+  .logo .logo-light{display:none;}
+  header.site.scrolled .logo-dark{display:none;}
+  header.site.scrolled .logo-light{display:block;}
+  .logo .mark{width:38px;height:38px;border-radius:10px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:18px;flex-shrink:0;}
+  .logo .word{font-family:var(--display);font-weight:700;font-size:19px;color:var(--navy);line-height:1.1;}
+  .logo .word span{display:block;font-size:10px;font-weight:600;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;margin-top:2px;}
+  nav.links{display:flex;gap:30px;font-size:14.5px;font-weight:600;color:#fff;align-items:center;transition:color .35s ease;}
+  header.site.scrolled nav.links{color:var(--navy);}
+  nav.links > a{position:relative;padding-bottom:3px;}
+  nav.links > a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--orange);border-radius:2px;transition:width .3s ease;}
+  nav.links > a:hover::after{width:100%;}
+  nav.links > a.active{color:var(--orange);}
+  nav.links > a.active::after{width:100%;}
+  @media (max-width:1040px){nav.links{display:none;}}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;}
+  .hamburger span{width:22px;height:2px;background:#fff;border-radius:2px;transition:background .35s ease;}
+  header.site.scrolled .hamburger span{background:var(--navy);}
+  @media (max-width:1040px){.hamburger{display:flex;}}
+  #mobileMenu{position:fixed;top:0;right:0;bottom:0;width:min(320px,84vw);background:#fff;z-index:130;box-shadow:var(--shadow-lg);padding:26px 26px;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;gap:4px;}
+  #mobileMenu.open{transform:translateX(0);}
+  #mobileMenu a{padding:13px 4px;font-weight:700;color:var(--navy);font-size:15px;border-bottom:1px solid var(--line);}
+  #mobileMenu a.active{color:var(--orange);}
+  #mobileMenu .close{align-self:flex-end;background:none;border:none;font-size:22px;color:var(--muted);padding:6px;margin-bottom:10px;}
+  #mobileBackdrop{position:fixed;inset:0;background:rgba(0,10,25,0.35);z-index:120;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;}
+  #mobileBackdrop.show{opacity:1;visibility:visible;}
+
+  /* HERO */
+  .hero{position:relative;height:100vh;min-height:660px;max-height:920px;overflow:hidden;background:var(--navy);}
+  .hero-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity 1.1s ease;}
+  .hero-slide.is-active{opacity:1;visibility:visible;z-index:2;}
+  .hero-slide img{width:100%;height:100%;object-fit:cover;}
+  .hero-slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,20,42,0.88) 0%, rgba(0,20,42,0.58) 46%, rgba(0,20,42,0.3) 100%), linear-gradient(0deg, rgba(0,10,25,0.55), transparent 40%);}
+  .hero-content{position:absolute;inset:0;z-index:5;display:flex;align-items:center;}
+  .hero-inner{max-width:1280px;margin:0 auto;padding:0 40px;width:100%;}
+  .hero-copy-box{max-width:640px;}
+  .hero-copy-box .eyebrow{color:var(--orange-light);margin-bottom:18px;}
+  h1.hero-title{font-family:var(--display);font-weight:700;font-size:clamp(38px,5.2vw,62px);line-height:1.08;letter-spacing:-0.01em;color:#fff;}
+  .hero-sub{font-size:17px;line-height:1.7;color:rgba(255,255,255,0.84);max-width:46ch;margin-top:20px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;}
+  .hero-dots{position:absolute;left:0;right:0;bottom:170px;z-index:6;display:flex;gap:11px;justify-content:center;}
+  .hero-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,0.38);cursor:pointer;border:none;padding:0;transition:all .3s ease;}
+  .hero-dot.is-active{background:var(--orange);width:26px;border-radius:999px;}
+  @media (max-width:640px){.hero{min-height:960px;}.hero-inner{padding:0 22px;}.hero-dots{bottom:130px;}}
+
+  /* SECTION GENERIC */
+  section.block{padding:118px 0;}
+  .procedure{background:var(--paper-2);}
+  .section-head{max-width:720px;margin:0 auto 54px;text-align:center;}
+  .section-head.left{margin:0 0 48px;text-align:left;max-width:640px;}
+  .section-head h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,42px);margin-top:14px;color:var(--navy);line-height:1.18;}
+  .section-head p{color:var(--muted);font-size:16px;line-height:1.7;margin:16px auto 0;max-width:64ch;}
+  .section-head.left p{margin-left:0;margin-right:0;}
+  .section-foot{text-align:center;margin-top:44px;}
+  @media (max-width:600px){section.block{padding:78px 0;}}
+
+  /* ISLAND CARD — half on hero, half below (merged badges + stats) */
+  .island-shell{position:relative;z-index:30;}
+  .island-wrap{max-width:1280px;margin:0 auto;padding:0 40px;position:relative;margin-top:-108px;}
+  .island-card{
+    background:radial-gradient(ellipse 640px 320px at 12% 0%, rgba(255,154,69,0.14), transparent 60%), linear-gradient(150deg, var(--navy) 0%, #001830 100%);
+    border-radius:28px;box-shadow:0 30px 70px -20px rgba(0,20,42,0.45), 0 1px 0 rgba(255,255,255,0.06) inset;
+    border:1px solid rgba(255,255,255,0.08);overflow:hidden;
+  }
+  .isl-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+  .isl-item{padding:30px 22px 26px;border-right:1px solid rgba(255,255,255,0.12);border-bottom:1px solid rgba(255,255,255,0.12);}
+  .isl-grid .isl-item:nth-child(4n){border-right:none;}
+  .isl-grid .isl-item:nth-last-child(-n+4){border-bottom:none;}
+  .isl-item .h{font-family:var(--display);font-weight:700;font-size:clamp(19px,2vw,25px);color:#fff;line-height:1.1;}
+  .isl-item .s{font-size:11.5px;font-weight:500;color:rgba(255,255,255,0.62);margin-top:8px;line-height:1.5;}
+  @media (max-width:900px){
+    .island-wrap{margin-top:-88px;padding:0 22px;}
+    .isl-grid{grid-template-columns:repeat(2,1fr);}
+    .isl-grid .isl-item:nth-child(4n){border-right:1px solid rgba(255,255,255,0.12);}
+    .isl-grid .isl-item:nth-child(2n){border-right:none;}
+    .isl-grid .isl-item:nth-last-child(-n+4){border-bottom:1px solid rgba(255,255,255,0.12);}
+    .isl-grid .isl-item:nth-last-child(-n+2){border-bottom:none;}
+  }
+  @media (max-width:560px){.island-wrap{margin-top:-70px;}.isl-item{padding:22px 16px 20px;}}
+
+  /* PILLARS */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .pillar{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px 28px;transition:transform .3s ease, box-shadow .3s ease;}
+  .pillar:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+  .pillar .ic{width:46px;height:46px;border-radius:12px;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+  .pillar .ic svg{width:22px;height:22px;stroke:var(--orange);}
+  .pillar h3{font-family:var(--display);font-weight:700;font-size:18.5px;color:var(--navy);margin-bottom:10px;line-height:1.3;}
+  .pillar p{font-size:13.5px;color:var(--muted);line-height:1.7;}
+  @media (max-width:950px){.pillars{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.pillars{grid-template-columns:1fr;}}
+  .pillars.cols-4{grid-template-columns:repeat(4,1fr);}
+  @media (max-width:950px){.pillars.cols-4{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.pillars.cols-4{grid-template-columns:1fr;}}
+
+  /* SPLIT / COLLAGE */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .about-collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:170px 170px;gap:14px;}
+  .ph{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);position:relative;}
+  .ph img{width:100%;height:100%;object-fit:cover;}
+  .split h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,42px);line-height:1.18;margin:14px 0 20px;color:var(--navy);}
+  .split p{color:var(--muted);font-size:16px;line-height:1.8;margin:0 0 16px;max-width:56ch;}
+  .stat-row{display:flex;gap:34px;margin:26px 0 30px;flex-wrap:wrap;}
+  .stat-row .st .num{font-family:var(--display);font-weight:700;font-size:26px;color:var(--navy);}
+  .stat-row .st .lbl{font-size:12px;color:var(--muted);margin-top:4px;}
+  @media (max-width:920px){.split{grid-template-columns:1fr;}}
+
+  /* ENQUIRE CARD (embedded lead form) */
+  .enquire-card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg);overflow:hidden;}
+  .enquire-card-head{padding:22px 28px 18px;border-bottom:1px solid var(--line);}
+  .enquire-card-head p{font-size:13px;color:var(--muted);margin-top:10px;}
+  .enquire-frame{background:#fff;line-height:0;}
+  .enquire-frame iframe{width:100%;height:420px;border:0;display:block;}
+  @media (max-width:640px){.enquire-card-head{padding:20px 22px 16px;}}
+
+  /* PROGRAM CARDS */
+  .program-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .program-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:transform .3s ease, box-shadow .3s ease;display:block;}
+  .program-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+  .program-img{aspect-ratio:16/9;overflow:hidden;}
+  .program-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .program-card:hover .program-img img{transform:scale(1.05);}
+  .program-body{padding:30px 32px 34px;}
+  .program-tag{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:var(--orange);background:var(--orange-pale);padding:6px 13px;border-radius:999px;}
+  .program-body h3{font-family:var(--display);font-weight:700;font-size:25px;color:var(--navy);margin:16px 0 14px;line-height:1.25;}
+  .program-facts{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:16px;}
+  .program-facts .f .num{font-weight:800;font-size:18px;color:var(--navy);font-family:var(--display);}
+  .program-facts .f .lbl{font-size:11px;color:var(--muted);}
+  .program-body p.desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:22px;}
+  @media (max-width:900px){.program-grid{grid-template-columns:1fr;}}
+
+  /* JOURNEY (trimester structure) */
+  .dept-total{display:inline-flex;align-items:center;gap:8px;background:var(--navy-pale);color:var(--navy);font-size:12.5px;font-weight:700;padding:8px 16px 8px 8px;border-radius:999px;margin-bottom:22px;}
+  .dept-total .circ{min-width:26px;height:26px;padding:0 8px;border-radius:999px;background:var(--navy);color:#fff;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:0.01em;display:flex;align-items:center;justify-content:center;white-space:nowrap;}
+  .dept-journey{display:flex;align-items:stretch;gap:0;}
+  .dept-stage{flex:1;background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px 28px 30px;transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;position:relative;}
+  .dept-stage:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent;}
+  .dept-stage-top{display:flex;align-items:center;gap:14px;}
+  .dept-badge{width:50px;height:50px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--display);font-weight:700;font-size:19px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .dept-stage:nth-child(3) .dept-badge{background:var(--orange);}
+  .dept-stage:nth-child(5) .dept-badge{background:#0a1626;}
+  .dept-stage:nth-child(7) .dept-badge{background:var(--navy-light);}
+  .dept-stage h3{font-family:var(--display);font-weight:700;font-size:19.5px;color:var(--navy);line-height:1.2;}
+  .dept-stage .yr{font-size:12px;color:var(--muted);font-weight:600;margin-top:3px;}
+  .dept-stage .copy{font-size:13.5px;color:var(--muted);line-height:1.65;margin:18px 0 20px;}
+  .dept-count{font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;}
+  .dept-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .dept-chip{background:var(--paper-2);border:1px solid var(--line);color:var(--navy);font-size:12px;font-weight:600;padding:7px 13px;border-radius:999px;white-space:nowrap;}
+  .dept-arrow{width:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--line-strong);}
+  .dept-arrow svg{width:22px;height:22px;}
+  @media (max-width:900px){
+    .dept-journey{flex-direction:column;gap:0;}
+    .dept-arrow{width:100%;height:36px;}
+    .dept-arrow svg{transform:rotate(90deg);}
+  }
+
+  /* CURRICULUM MODAL + ACCORDION */
+  body.modal-open{overflow:hidden;}
+  .modal-backdrop{position:fixed;inset:0;background:rgba(0,10,25,0.55);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;}
+  .modal-backdrop.show{opacity:1;visibility:visible;}
+  .modal-panel{background:#fff;border-radius:24px;max-width:660px;width:100%;max-height:85vh;display:flex;flex-direction:column;box-shadow:var(--shadow-lg);transform:translateY(18px);transition:transform .3s ease;overflow:hidden;}
+  .modal-backdrop.show .modal-panel{transform:translateY(0);}
+  .modal-head{padding:26px 30px 20px;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-shrink:0;}
+  .modal-head .program-tag{margin-bottom:10px;}
+  .modal-head h3{font-family:var(--display);font-weight:700;font-size:22px;color:var(--navy);line-height:1.25;}
+  .modal-head p{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6;}
+  .modal-close{background:var(--paper-2);border:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer;flex-shrink:0;font-size:15px;transition:background .2s ease,color .2s ease;}
+  .modal-close:hover{background:var(--navy);color:#fff;}
+  .modal-body{padding:22px 30px 30px;overflow-y:auto;}
+
+  .acc{display:flex;flex-direction:column;gap:12px;}
+  .acc-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .acc-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 18px;background:var(--paper-2);border:none;text-align:left;font-family:var(--body);font-weight:700;font-size:14.5px;color:var(--navy);cursor:pointer;transition:background .25s ease,color .25s ease;}
+  .acc-trigger .yr{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-top:3px;text-transform:none;letter-spacing:0;}
+  .acc-item.is-open .acc-trigger{background:var(--navy);color:#fff;}
+  .acc-item.is-open .acc-trigger .yr{color:rgba(255,255,255,0.65);}
+  .acc-plus{width:24px;height:24px;border-radius:50%;background:#fff;border:1px solid var(--line-strong);flex-shrink:0;position:relative;transition:transform .3s ease,background .3s ease,border-color .3s ease;}
+  .acc-plus::before,.acc-plus::after{content:"";position:absolute;background:var(--navy);transition:opacity .2s ease;}
+  .acc-plus::before{left:50%;top:6px;bottom:6px;width:2px;transform:translateX(-50%);}
+  .acc-plus::after{top:50%;left:6px;right:6px;height:2px;transform:translateY(-50%);}
+  .acc-item.is-open .acc-plus{background:var(--orange);border-color:var(--orange);}
+  .acc-item.is-open .acc-plus::before{opacity:0;}
+  .acc-panel{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+  .acc-panel-inner{padding:18px 18px 20px;}
+  .acc-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+  .acc-meta span{font-size:11px;font-weight:700;color:var(--navy);background:var(--navy-pale);padding:5px 12px;border-radius:999px;}
+  .acc-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .acc-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .acc-list li{display:flex;gap:10px;font-size:13px;color:var(--muted);line-height:1.6;}
+  .acc-list li .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);margin-top:7px;flex-shrink:0;}
+  @media (max-width:600px){.modal-head{padding:22px 22px 16px;}.modal-body{padding:18px 22px 24px;}}
+
+  /* IMPACT (entrepreneurship) */
+  .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .impact-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;}
+  .imp{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;}
+  .imp .num{font-family:var(--display);font-weight:700;font-size:24px;color:var(--navy);}
+  .imp .lbl{font-size:12px;color:var(--muted);margin-top:4px;}
+  .community-list{list-style:none;margin-top:22px;}
+  .community-list li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:14px;color:var(--muted);}
+  .community-list li:first-child{border-top:none;}
+  .community-list li .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);margin-top:8px;flex-shrink:0;}
+  .community-list li b{color:var(--navy);font-weight:700;}
+  @media (max-width:920px){.impact-grid{grid-template-columns:1fr;gap:36px;}}
+
+  /* FACILITY GRID (learning + placement toolkit) */
+  .facility-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .facility{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;text-align:center;transition:transform .3s ease, box-shadow .3s ease;}
+  .facility:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);}
+  .facility .ic{width:42px;height:42px;border-radius:11px;background:var(--navy-pale);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+  .facility .ic svg{width:20px;height:20px;stroke:var(--navy);}
+  .facility h4{font-family:var(--display);font-weight:700;font-size:15px;color:var(--navy);margin-bottom:6px;}
+  .facility p{font-size:12px;color:var(--muted);line-height:1.6;}
+  @media (max-width:900px){.facility-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* CAMPUS-STYLE TILES (festivals) */
+  .campus-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .campus-tile{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-sm);}
+  .campus-tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .campus-tile:hover img{transform:scale(1.08);}
+  .campus-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, transparent 40%, rgba(0,16,34,0.82));}
+  .campus-tile .lbl{position:absolute;left:16px;right:16px;bottom:14px;z-index:2;color:#fff;}
+  .campus-tile .lbl .name{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.25;}
+  .campus-tile .lbl .loc{font-size:11.5px;color:rgba(255,255,255,0.7);margin-top:4px;}
+  @media (max-width:800px){.campus-strip{grid-template-columns:1fr;}}
+
+  /* IMP CARD GRID standalone (scholarships / recognition) */
+  .imp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:900px){.imp-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.imp-grid{grid-template-columns:1fr;}}
+  .imp-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;transition:transform .3s ease,box-shadow .3s ease;}
+  .imp-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);}
+  .imp-card .pct{font-family:var(--display);font-weight:700;font-size:32px;color:var(--orange);}
+  .imp-card h4{font-family:var(--display);font-weight:700;font-size:15.5px;color:var(--navy);margin:10px 0 8px;}
+  .imp-card p{font-size:12.5px;color:var(--muted);line-height:1.6;}
+
+  /* FEE GROUPS (scholarship / loyalty) */
+  .fee-group{margin-bottom:44px;}
+  .fee-group:last-of-type{margin-bottom:28px;}
+  .fee-group-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap;}
+  .fee-group-head .eyebrow{margin:0;}
+  .fee-group-note{font-size:12px;color:var(--muted);}
+  .imp-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+  @media (max-width:900px){.imp-grid.cols-3{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.imp-grid.cols-3{grid-template-columns:1fr;}}
+  .imp-grid .imp-card.span-2{grid-column:span 2;}
+  @media (max-width:560px){.imp-grid .imp-card.span-2{grid-column:span 1;}}
+  .imp-tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:16px;}
+  .imp-tag.tag-scholar{background:var(--orange-pale);color:var(--orange);}
+  .imp-tag.tag-loyalty{background:var(--navy-pale);color:var(--navy);}
+
+  /* CHIP CLOUD (recruiters / careers) */
+  .chip-cloud{display:flex;flex-wrap:wrap;gap:9px;}
+
+  /* TESTIMONIALS */
+  .testi-tabs{display:inline-flex;gap:8px;background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:4px;margin:0 auto 40px;}
+  .testi-tabs button{border:none;background:transparent;padding:10px 22px;border-radius:999px;font-size:13px;font-weight:700;color:var(--muted);transition:all .25s ease;cursor:pointer;font-family:var(--body);}
+  .testi-tabs button.active{background:var(--navy);color:#fff;}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .testi-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 26px;transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;gap:16px;}
+  .testi-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+  .testi-card .qm{font-family:var(--display);font-style:italic;font-weight:700;font-size:40px;color:var(--orange-pale);line-height:.5;}
+  .testi-card p.qtext{font-size:13.5px;color:var(--muted);line-height:1.7;flex:1;}
+  .testi-who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:16px;}
+  .testi-who img{width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+  .testi-who b{display:block;font-family:var(--display);font-size:14px;color:var(--navy);}
+  .testi-who span{font-size:11.5px;color:var(--muted);}
+  .hidden-set{display:none;}
+  @media (max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.testi-grid{grid-template-columns:1fr;}}
+  #testimonials{background:linear-gradient(180deg, rgba(246,248,251,0.55), rgba(246,248,251,0.55)), url('img/1.jpg') center 30%/cover no-repeat;}
+
+  /* QUOTE / CTA */
+  .quote-band{background:radial-gradient(ellipse 700px 400px at 85% 20%, rgba(255,255,255,0.06), transparent 60%), linear-gradient(135deg, var(--navy) 0%, #001830 100%);color:#fff;text-align:center;padding:110px 0;}
+  .quote-band blockquote{font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(22px,3vw,32px);max-width:820px;margin:0 auto 22px;line-height:1.45;}
+  .quote-band cite{font-style:normal;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--orange-light);}
+  .cta-band{background:linear-gradient(135deg, rgba(0,38,77,0.62) 0%, rgba(0,24,48,0.68) 100%), url('img/7.jpg') center 25%/cover no-repeat;padding:110px 0;text-align:center;}
+  .cta-band h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4vw,48px);max-width:18ch;margin:16px auto 12px;color:#fff;line-height:1.16;}
+  .cta-band .sub{color:rgba(255,255,255,0.8);font-size:15.5px;max-width:52ch;margin:0 auto 34px;}
+  .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+  /* FOOTER */
+  footer.site{background:#001830;color:rgba(255,255,255,0.7);padding:70px 0 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .foot-logo{display:flex;align-items:center;gap:10px;}
+  .foot-logo .mark{width:36px;height:36px;border-radius:9px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:17px;color:#fff;}
+  .foot-logo .word{font-family:var(--display);font-size:20px;font-weight:700;color:#fff;}
+  .foot-col h4{font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;}
+  .foot-col a{display:block;font-size:14px;font-weight:500;padding:6px 0;color:rgba(255,255,255,0.75);transition:color .2s ease;}
+  .foot-col a:hover{color:var(--orange-light);}
+  .foot-col .contact-line{font-size:13.5px;line-height:1.7;color:rgba(255,255,255,0.75);padding:6px 0;}
+  .foot-bottom{padding-top:26px;display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.4);flex-wrap:wrap;gap:10px;}
+  @media (max-width:850px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.wrap{padding:0 22px;}header.site{padding:18px 22px;}}
+
+  .to-top{position:fixed;right:26px;bottom:26px;width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);z-index:90;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .3s ease, transform .3s ease, visibility .3s ease, background .25s ease;}
+  .to-top svg{width:20px;height:20px;}
+  .to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+  .to-top:hover{background:var(--orange);}
+  @media (max-width:600px){.to-top{right:16px;bottom:16px;width:44px;height:44px;}}
+
+  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease;}
+  [data-reveal].is-visible{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){*{transition-duration:0.01ms !important; animation-duration:0.01ms !important;}[data-reveal]{opacity:1;transform:none;}}
+</style>
+ <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N3XVVLXF');</script>
+  <!-- LeadSquared -->
+  <script src="https://web-in21.mxradon.com/t/Tracker.js"></script>
+  <script>pidTracker('57004');</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3XVVLXF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="site" id="siteHeader">
+  <a class="logo" href="https://campaigns.pes.edu/" aria-label="PES University">
+    <img class="logo-dark" src="img/pesu_dark_logo.png" alt="PES University" style="height:48px;width:auto;">
+    <img class="logo-light" src="img/PESU-new-logo.png" alt="PES University" style="height:48px;width:auto;">
+  </a>
+  <nav class="links" id="mainNav">
+    <a href="#overview">Overview</a>
+    <a href="#structure">Curriculum</a>
+    <a href="#careers">Careers</a>
+    <a href="#fees">Fees</a>
+    <a href="#highlights">Highlights</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn solid" href="https://admissions.pes.edu/registration/">Apply Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div id="mobileBackdrop"></div>
+<div id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Close menu">✕</button>
+  <a href="#overview">Overview</a>
+  <a href="#structure">Curriculum</a>
+  <a href="#careers">Careers</a>
+  <a href="#fees">Fees</a>
+  <a href="#highlights">Highlights</a>
+  <a class="btn solid" style="justify-content:center;margin-top:14px;" href="https://admissions.pes.edu/registration/">Apply Now</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="heroRotator">
+    <div class="hero-slide is-active">
+      <img src="img/mbbs-slider-one.jpg" alt="Medical students at PES University">
+      <div class="hero-content"><div class="hero-inner"><div class="hero-copy-box">
+        <div class="eyebrow">Bachelor of Medicine, Bachelor of Surgery</div>
+        <h1 class="hero-title">5.5 years to becoming a doctor.</h1>
+        <p class="hero-sub">A UGC- and NMC-approved MBBS at PES University's Electronic City campus, anchored by a 1000-bed teaching hospital.</p>
+        <div class="hero-actions"><a href="https://admissions.pes.edu/registration/" class="btn solid">Register for Admissions</a><a href="#structure" class="btn outline-light">See the Curriculum</a></div>
+      </div></div></div>
+    </div>
+    <div class="hero-slide">
+      <img src="img/mbbs-slider-two.jpg" alt="Clinical training inside PES University hospital">
+      <div class="hero-content"><div class="hero-inner"><div class="hero-copy-box">
+        <div class="eyebrow">Clinical Exposure</div>
+        <h1 class="hero-title">A 1000-bed hospital, built into the campus.</h1>
+        <p class="hero-sub">From simulation labs to live clinical postings, backed by a 650-bed specialty and super-specialty hospital.</p>
+        <div class="hero-actions"><a href="#pedagogy" class="btn solid">Explore the Programme</a><a href="https://admissions.pes.edu/registration/" class="btn outline-light">Apply Now</a></div>
+      </div></div></div>
+    </div>
+    <div class="hero-slide">
+      <img src="img/mbbs-slider-three.jpg" alt="PES Institute of Medical Sciences and Research campus">
+      <div class="hero-content"><div class="hero-inner"><div class="hero-copy-box">
+        <div class="eyebrow">A Legacy in Medical Education</div>
+        <h1 class="hero-title">Pioneering medical education since 2001.</h1>
+        <p class="hero-sub">Built on the legacy of PES Institute of Medical Sciences &amp; Research, Kuppam — now expanded to Bengaluru's Electronic City campus.</p>
+        <div class="hero-actions"><a href="#overview" class="btn solid">Meet the Programme</a><a href="https://admissions.pes.edu/registration/" class="btn outline-light">Apply Now</a></div>
+      </div></div></div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- ISLAND CARD -->
+  <div class="island-shell">
+    <div class="island-wrap">
+      <div class="island-card" data-reveal>
+        <div class="isl-grid">
+          <div class="isl-item"><div class="h">5.5 Yrs</div><div class="s">4.5 yrs + 1 yr internship</div></div>
+          <div class="isl-item"><div class="h">UGC · NMC</div><div class="s">Approval bodies</div></div>
+          <div class="isl-item"><div class="h">A+</div><div class="s">NAAC accredited</div></div>
+          <div class="isl-item"><div class="h">1000+ Beds</div><div class="s">Teaching hospital, EC Campus</div></div>
+          <div class="isl-item"><div class="h">650 Beds</div><div class="s">Specialty &amp; super-specialty hospital</div></div>
+          <div class="isl-item"><div class="h">Est. 2001</div><div class="s">Pioneer in medical education</div></div>
+          <div class="isl-item"><div class="h">NEET</div><div class="s">50th percentile &amp; above required</div></div>
+          <div class="isl-item"><div class="h">EC Campus</div><div class="s">PES University, Electronic City</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENQUIRE / LEAD FORM -->
+  <section class="block" id="enquire" style="padding-top:80px;">
+    <div class="wrap split">
+      <div data-reveal>
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Have questions about MBBS admissions?</h2>
+        <p>Share a few details and our admissions counsellors will walk you through eligibility, fees, scholarships and the application timeline — no obligation.</p>
+        <ul class="community-list" style="margin-top:22px;">
+          <li><span class="dot"></span><span><b>Fast Response</b> — a counsellor calls back within 24 hours.</span></li>
+          <li><span class="dot"></span><span><b>One-on-One Guidance</b> — personalised help with NEET eligibility and documentation.</span></li>
+          <li><span class="dot"></span><span><b>No Obligation</b> — ask questions before you decide to apply.</span></li>
+        </ul>
+      </div>
+      <div class="enquire-card" data-reveal>
+        <div class="enquire-card-head">
+          <span class="program-tag">Enquire Now</span>
+          <p>Fill this in and we'll reach out shortly.</p>
+        </div>
+        <div class="enquire-frame">
+          <iframe name="leadsquared_landing_page_frame"
+            src="https://pes.viewpage.co/MBBS_CP?ignoremxtracking=mxtrue" width="100%" height="420"
+            frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript"> var MXLandingPageId = '53b6ef0a-4039-11ef-b78a-025810629693'; </script>
+
+  <!-- WHY PESU MBBS -->
+  <section class="block procedure" id="why" style="padding-top:80px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Why PES University</p>
+        <h2>Key differentiators of the programme</h2>
+        <p>Six deliberate choices behind the curriculum, the campus and the hospital it's built around.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Academic Excellence</h3>
+          <p>A strong academic reputation built on a comprehensive curriculum and an experienced faculty body.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+          <h3>State-of-the-Art Infrastructure</h3>
+          <p>Modern facilities, laboratories and equipment designed for a conducive learning environment.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Research Opportunities</h3>
+          <p>Dedicated labs and funding for student projects, enabling innovative and cutting-edge medical research.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Clinical Exposure</h3>
+          <p>A 650-bed specialty and super-specialty hospital gives students hands-on experience from early on.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <h3>Student Support Services</h3>
+          <p>Counselling, career guidance and extracurricular activities that support all-round student development.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-3 4c0 1.5.7 2.5 1.5 3.2C5.6 15 5 16.3 5 18a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4c0-1.7-.6-3-1.5-3.8.8-.7 1.5-1.7 1.5-3.2a4 4 0 0 0-3-4V6a4 4 0 0 0-4-4"/></svg></div>
+          <h3>AI in Curriculum &amp; Care</h3>
+          <p>Artificial intelligence integrated into both curriculum delivery and patient care on campus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="block" id="overview">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>A UGC- and NMC-approved MBBS, backed by a working hospital</h2>
+        <p>PES University has been a pioneer in medical education since 2001, when the PES Institute of Medical Sciences &amp; Research (PESIMSR) was established in Kuppam, Andhra Pradesh. Building on that legacy, the PES University Institute of Medical Sciences &amp; Research (PESUIMSR) launched in Bengaluru in 2023, with a 1000-bed hospital built into the Electronic City campus.</p>
+        <p>Candidates need 50% or more in 10+2 with Physics, Chemistry, Biology and English, along with the 50th percentile or above in NEET. The programme runs 4.5 years of coursework plus a mandatory one-year internship.</p>
+        <div class="stat-row">
+          <div class="st"><div class="num">5.5 Yrs</div><div class="lbl">Coursework + internship</div></div>
+          <div class="st"><div class="num">50%</div><div class="lbl">Min. NEET percentile</div></div>
+          <div class="st"><div class="num">A+</div><div class="lbl">NAAC accredited</div></div>
+        </div>
+        <a href="https://admissions.pes.edu/registration/" class="btn outline">Register for Admissions</a>
+      </div>
+      <div class="about-collage" data-reveal>
+        <div class="ph"><img src="img/1.jpg" alt="Clinical skills lab session"></div>
+        <div class="ph"><img src="img/2.jpg" alt="Hospital ward at PES University"></div>
+        <div class="ph"><img src="img/3.jpg" alt="Anatomy lab session"></div>
+        <div class="ph"><img src="img/4.jpg" alt="Community outreach health camp"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-band">
+    <div class="wrap">
+      <blockquote>"Our programme pairs rigorous foundational science with clinical exposure from the earliest terms — case-based learning, simulation and a teaching hospital on campus, so students are working alongside patients long before their internship year."</blockquote>
+      <cite>PES University Institute of Medical Sciences &amp; Research</cite>
+    </div>
+  </section>
+
+  <!-- PROGRAM DESIGN -->
+  <section class="block" id="pedagogy">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Programme Design</p>
+        <h2>From lecture theatre to hospital ward</h2>
+        <p>The curriculum moves in two broad stages — foundational science first, then clinical training and a mandatory internship.</p>
+      </div>
+      <div class="program-grid">
+        <div class="program-card" data-reveal>
+          <div class="program-img"><img src="img/5.jpg" alt="Pre-clinical and para-clinical training"></div>
+          <div class="program-body">
+            <span class="program-tag">Year 1 &amp; 2</span>
+            <h3>Pre-Clinical &amp; Para-Clinical Foundation</h3>
+            <div class="program-facts">
+              <div class="f"><div class="num">2</div><div class="lbl">Years</div></div>
+              <div class="f"><div class="num">6</div><div class="lbl">Foundation Subjects</div></div>
+              <div class="f"><div class="num">AETCOM</div><div class="lbl">From Day One</div></div>
+            </div>
+            <p class="desc">Anatomy, Physiology and Biochemistry lay the groundwork for the human body, followed by Pathology, Microbiology and Pharmacology — how disease begins, progresses and is treated.</p>
+            <button type="button" class="btn outline sm" data-modal-open="curriculum-foundation">View Curriculum</button>
+          </div>
+        </div>
+        <div class="program-card" data-reveal>
+          <div class="program-img"><img src="img/6.jpg" alt="Clinical rotations and internship"></div>
+          <div class="program-body">
+            <span class="program-tag">Year 3 Onward</span>
+            <h3>Clinical Training &amp; Internship</h3>
+            <div class="program-facts">
+              <div class="f"><div class="num">7+</div><div class="lbl">Core Specialties</div></div>
+              <div class="f"><div class="num">1 Yr</div><div class="lbl">Mandatory Internship</div></div>
+              <div class="f"><div class="num">650</div><div class="lbl">Bed Specialty Hospital</div></div>
+            </div>
+            <p class="desc">Rotations through General Medicine, Surgery, OBG, Paediatrics, Orthopaedics, Ophthalmology and ENT, under the supervision of experienced physicians, before a full year of internship.</p>
+            <button type="button" class="btn outline sm" data-modal-open="curriculum-clinical">View Curriculum</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRUCTURE / JOURNEY -->
+  <section class="block procedure" id="structure">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Semester-Wise Structure</p>
+        <h2>Four phases, one internship year</h2>
+        <p>The MBBS follows the Competency-Based Medical Education (CBME) framework, phase by phase.</p>
+      </div>
+      <div style="text-align:center;">
+        <div class="dept-total"><span class="circ">CBME</span> Four academic phases plus a mandatory rotating internship</div>
+      </div>
+      <div class="dept-journey">
+        <div class="dept-stage" data-reveal>
+          <div class="dept-stage-top">
+            <div class="dept-badge">I</div>
+            <div><h3>Pre-Clinical Phase</h3><div class="yr">Year 1 · Sem 1–2</div></div>
+          </div>
+          <p class="copy">Foundational sciences that lay the groundwork for understanding the human body and its functions.</p>
+          <div class="dept-count">Subjects</div>
+          <div class="dept-chips"><span class="dept-chip">Anatomy</span><span class="dept-chip">Physiology</span><span class="dept-chip">Biochemistry</span></div>
+        </div>
+        <div class="dept-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="dept-stage" data-reveal>
+          <div class="dept-stage-top">
+            <div class="dept-badge">II</div>
+            <div><h3>Para-Clinical Phase</h3><div class="yr">Year 2 · Sem 3–4</div></div>
+          </div>
+          <p class="copy">Understanding how disease begins, progresses, is diagnosed and treated.</p>
+          <div class="dept-count">Subjects</div>
+          <div class="dept-chips"><span class="dept-chip">Pathology</span><span class="dept-chip">Microbiology</span><span class="dept-chip">Pharmacology</span></div>
+        </div>
+        <div class="dept-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="dept-stage" data-reveal>
+          <div class="dept-stage-top">
+            <div class="dept-badge">III</div>
+            <div><h3>Clinical Phase</h3><div class="yr">Year 3 · Sem 5–9</div></div>
+          </div>
+          <p class="copy">Rotations through hospital departments and specialties, under supervision of experienced physicians.</p>
+          <div class="dept-count">Subjects</div>
+          <div class="dept-chips"><span class="dept-chip">Community Medicine</span><span class="dept-chip">Forensic Medicine</span><span class="dept-chip">General Medicine</span><span class="dept-chip">General Surgery</span><span class="dept-chip">OBG</span><span class="dept-chip">Paediatrics</span><span class="dept-chip">Orthopaedics</span><span class="dept-chip">Ophthalmology</span><span class="dept-chip">ENT</span></div>
+        </div>
+        <div class="dept-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="dept-stage" data-reveal>
+          <div class="dept-stage-top">
+            <div class="dept-badge">IV</div>
+            <div><h3>Internship</h3><div class="yr">12 Months</div></div>
+          </div>
+          <p class="copy">A mandatory rotating internship across departments, completing the path to registration as a doctor.</p>
+          <div class="dept-count">Focus Areas</div>
+          <div class="dept-chips"><span class="dept-chip">Rotating Internship</span><span class="dept-chip">Clinical Postings</span><span class="dept-chip">AETCOM</span></div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:20px;">*Semester and phase windows are tentative and subject to change per academic-calendar norms.</p>
+    </div>
+  </section>
+
+  <!-- WHO SHOULD PURSUE -->
+  <section class="block" id="who">
+    <div class="wrap impact-grid">
+      <div data-reveal>
+        <p class="eyebrow">Who Should Pursue This</p>
+        <h2 style="font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,42px);color:var(--navy);margin:14px 0 18px;line-height:1.18;">Built for future doctors, not just future graduates</h2>
+        <p style="color:var(--muted);font-size:16px;line-height:1.8;max-width:56ch;">Students who are passionate about healthcare and have a strong desire to serve the community should consider MBBS at PESUIMSR — a programme suited to those who are dedicated, compassionate and genuinely curious about scientific and medical knowledge.</p>
+        <div class="impact-stats">
+          <div class="imp"><div class="num">1000+ Beds</div><div class="lbl">Teaching hospital, EC Campus</div></div>
+          <div class="imp"><div class="num">650 Beds</div><div class="lbl">Specialty &amp; super-specialty hospital</div></div>
+          <div class="imp"><div class="num">2001</div><div class="lbl">Founding year, PESIMSR Kuppam</div></div>
+          <div class="imp"><div class="num">5.5 Yrs</div><div class="lbl">Course, incl. internship</div></div>
+        </div>
+      </div>
+      <div data-reveal>
+        <p class="eyebrow">What It Takes</p>
+        <ul class="community-list">
+          <li><span class="dot"></span><span><b>Willingness to Work Hard</b> — resilience and problem-solving under sustained academic pressure.</span></li>
+          <li><span class="dot"></span><span><b>Compassion</b> — a genuine desire to serve patients and the wider community.</span></li>
+          <li><span class="dot"></span><span><b>Scientific Curiosity</b> — interest in the science behind diagnosis and treatment.</span></li>
+          <li><span class="dot"></span><span><b>Commitment to Lifelong Learning</b> — medicine keeps changing; so must the doctor.</span></li>
+          <li><span class="dot"></span><span><b>Composure Under Pressure</b> — the ability to stay level-headed in high-stakes situations.</span></li>
+          <li><span class="dot"></span><span><b>A Long-Term View</b> — readiness for a challenging, multi-year path to practice.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEDAGOGY / TOOLKIT -->
+  <section class="block procedure">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Pedagogy Methods</p>
+        <h2>How the classroom becomes the clinic</h2>
+        <p>From problem-based learning to simulated patients, before students ever see the ward.</p>
+      </div>
+      <div class="facility-grid">
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/><path d="M13 3h8v8M21 3l-9 9"/></svg></div><h4>Problem-Based Learning</h4><p>Real-world medical problems build critical thinking and problem-solving skills.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><h4>Small Group Teaching</h4><p>Tutorials and seminars that allow personalised attention and peer learning.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div><h4>Simulation &amp; Skills Labs</h4><p>Clinical skills training with simulated patients, in a controlled environment.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h4>Integrated Teaching</h4><p>Collaboration across departments for a holistic understanding of each topic.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4-4M12 14l4-4M4 20h16"/></svg></div><h4>AETCOM Module</h4><p>Attitude, ethics and communication, woven through the curriculum from year one.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h4>Family Adoption Programme</h4><p>Village outreach that grounds Community Medicine in real households.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>Self-Directed Learning</h4><p>Students take ownership of their own research and study habits.</p></div>
+        <div class="facility" data-reveal><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div><h4>Technology-Enhanced Learning</h4><p>Digital libraries, virtual learning environments and AI-enabled tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section class="block" id="careers">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Careers</p>
+        <h2>Where an MBBS from PESU can take you</h2>
+        <p>A dedicated placement cell, career counselling and an alumni network support every graduate's next step.</p>
+      </div>
+      <div class="chip-cloud" style="justify-content:center;margin-bottom:56px;">
+        <span class="dept-chip">General Practitioner</span><span class="dept-chip">Specialist Doctor</span><span class="dept-chip">Medical Researcher</span><span class="dept-chip">Public Health Officer</span><span class="dept-chip">Medical Administrator</span><span class="dept-chip">Academician</span>
+      </div>
+      <div style="text-align:center;">
+        <div class="dept-total"><span class="circ">14</span> Clinical rotations &amp; specialisation exposure across the programme</div>
+      </div>
+      <div class="chip-cloud" style="justify-content:center;">
+        <span class="dept-chip">General Medicine</span><span class="dept-chip">General Surgery</span><span class="dept-chip">Obstetrics &amp; Gynaecology</span><span class="dept-chip">Paediatrics</span><span class="dept-chip">Orthopaedics</span><span class="dept-chip">Ophthalmology</span><span class="dept-chip">ENT</span><span class="dept-chip">Dermatology</span><span class="dept-chip">Psychiatry</span><span class="dept-chip">Respiratory Medicine</span><span class="dept-chip">Radiodiagnosis</span><span class="dept-chip">Anaesthesiology</span><span class="dept-chip">Community Medicine</span><span class="dept-chip">Forensic Medicine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATIONS -->
+  <section class="block procedure">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Collaborations &amp; Legacy</p>
+        <h2>Partnerships that widen the training</h2>
+      </div>
+      <div class="pillars cols-4">
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <h3>PESIMSR, Kuppam</h3>
+          <p>The founding medical college of 2001, serving Rayalaseema and bordering Tamil Nadu and Karnataka.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <h3>S-VYASA MOU</h3>
+          <p>A partnership for collaborative student training and research.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-3 4c0 1.5.7 2.5 1.5 3.2C5.6 15 5 16.3 5 18a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4c0-1.7-.6-3-1.5-3.8.8-.7 1.5-1.7 1.5-3.2a4 4 0 0 0-3-4V6a4 4 0 0 0-4-4"/></svg></div>
+          <h3>AI Integration</h3>
+          <p>Artificial intelligence in curriculum delivery and patient care, campus-wide.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Outreach &amp; FAP</h3>
+          <p>Regular health camps and the Family Adoption Programme for underprivileged communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHOLARSHIPS & FEES -->
+  <section class="block" id="fees">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">Financial Support</p>
+        <h2>Merit scholarships, awarded on performance</h2>
+        <p>Over ₹140 crores in merit scholarships have been given to PES University students since 2014. Two tuition-refund scholarships apply to the MBBS batch, stacked by rank.</p>
+      </div>
+
+      <div class="fee-group">
+        <div class="fee-group-head">
+          <p class="eyebrow">Merit Scholarships</p>
+          <span class="fee-group-note">Awarded on CGPA / SGPA</span>
+        </div>
+        <div class="imp-grid">
+          <div class="imp-card span-2" data-reveal><span class="imp-tag tag-scholar">Scholarship</span><div class="pct">50%</div><h4>Prof. MRD Merit Scholarship</h4><p>Merit certificate + 50% tuition fee refund for the top 5% of students, every year, based on CGPA. In an MBBS batch of 250, that's roughly the top 13 students.</p></div>
+          <div class="imp-card span-2" data-reveal><span class="imp-tag tag-scholar">Scholarship</span><div class="pct">40%</div><h4>Dr. B. C. Roy Merit Scholarship</h4><p>Merit certificate + 40% tuition fee refund for students ranked above the top 5% up to the top 25%, every semester, based on SGPA. In an MBBS batch of 250, that's roughly the next 50 students.</p></div>
+        </div>
+      </div>
+
+      <div class="fee-group">
+        <div class="fee-group-head">
+          <p class="eyebrow">PES Loyalty Program</p>
+          <span class="fee-group-note">Awarded on family / institutional ties, every year of study</span>
+        </div>
+        <div class="imp-grid">
+          <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Loyalty</span><div class="pct">30%</div><h4>PES Employees</h4><p>Children of full-time staff, 5+ years employment.</p></div>
+          <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Loyalty</span><div class="pct">20%</div><h4>PES Institution Students</h4><p>Graduates of any PES institution or sister concern.</p></div>
+          <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Loyalty</span><div class="pct">10%</div><h4>Siblings of Students</h4><p>Siblings of currently enrolled PES students.</p></div>
+          <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Loyalty</span><div class="pct">10%</div><h4>Alumni Family</h4><p>Siblings and children of PES University alumni.</p></div>
+        </div>
+      </div>
+
+      <p style="font-size:12px;color:var(--muted);margin-top:8px;text-align:center;">Subject to qualifying CGPA / SGPA and Scholarship Committee conditions each year · Not applicable in the final year of study · One award per student per semester / year · Batch figures for merit scholarships are illustrative for an MBBS cohort of 250 · Refer www.pes.edu for regular updates.</p>
+    </div>
+  </section>
+
+
+  <!-- UNIVERSITY HIGHLIGHTS -->
+  <section class="block procedure" id="highlights">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow center">University Highlights</p>
+        <h2>Recognition beyond the medical programme</h2>
+        <p>The accreditations and rankings behind PES University as a whole.</p>
+      </div>
+      <div class="imp-grid">
+        <div class="imp-card" data-reveal><span class="imp-tag tag-scholar">Ranking</span><div class="pct">#1</div><h4>University in Karnataka</h4><p>Among new universities under 5 years, ranked by KSURF.</p></div>
+        <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Accreditation</span><div class="pct">A+</div><h4>NAAC Accredited</h4><p>PES University holds NAAC's top-grade accreditation nationally.</p></div>
+        <div class="imp-card" data-reveal><span class="imp-tag tag-scholar">Ranking</span><div class="pct">#1</div><h4>B-School in Karnataka</h4><p>Times of India B-School Rankings, 2021.</p></div>
+        <div class="imp-card" data-reveal><span class="imp-tag tag-loyalty">Recognition</span><div class="pct">2nd</div><h4>Most Preferred B-School</h4><p>Second only to IIM Bangalore among B-School aspirants, per Times of India.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="eyebrow center">Admissions 2026 Open</p>
+      <h2>Your white coat is 5.5 years away.</h2>
+      <p class="sub">4.5 years of training, a year of internship, and a 1000-bed hospital that's already part of your classroom.</p>
+      <div class="cta-actions">
+        <a href="https://admissions.pes.edu/registration/" class="btn solid">Register for Admissions</a>
+        <a href="mailto:admissions@pes.edu" class="btn outline-light">Email Admissions</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CURRICULUM MODAL — FOUNDATION -->
+<div class="modal-backdrop" id="curriculum-foundation">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="curriculumFoundationTitle">
+    <div class="modal-head">
+      <div>
+        <span class="program-tag">Year 1 &amp; 2</span>
+        <h3 id="curriculumFoundationTitle">Pre-Clinical &amp; Para-Clinical Foundation</h3>
+        <p>Two phases of foundational science before clinical postings begin.</p>
+      </div>
+      <button type="button" class="modal-close" data-modal-close aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="acc">
+        <div class="acc-item is-open">
+          <button type="button" class="acc-trigger" aria-expanded="true">
+            <span>Phase I (First Year)<span class="yr">Semester 1 &amp; Semester 2</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-chips">
+                <span class="dept-chip">Anatomy</span>
+                <span class="dept-chip">Physiology</span>
+                <span class="dept-chip">Biochemistry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>Phase II (Second Year)<span class="yr">Semester 3 &amp; Semester 4</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-chips">
+                <span class="dept-chip">Pathology</span>
+                <span class="dept-chip">Microbiology</span>
+                <span class="dept-chip">Pharmacology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CURRICULUM MODAL — CLINICAL -->
+<div class="modal-backdrop" id="curriculum-clinical">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="curriculumClinicalTitle">
+    <div class="modal-head">
+      <div>
+        <span class="program-tag">Year 3 Onward</span>
+        <h3 id="curriculumClinicalTitle">Clinical Training &amp; Internship</h3>
+        <p>Clinical postings through to the mandatory rotating internship.</p>
+      </div>
+      <button type="button" class="modal-close" data-modal-close aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="acc">
+        <div class="acc-item is-open">
+          <button type="button" class="acc-trigger" aria-expanded="true">
+            <span>Phase III (Third Year Part 1)<span class="yr">Semester 5, Semester 6</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-chips">
+                <span class="dept-chip">Community Medicine</span>
+                <span class="dept-chip">Forensic Medicine &amp; Toxicology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>Phase IV (Third Year Part 2)<span class="yr">Semester 7, Semester 8, Semester 9</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-chips">
+                <span class="dept-chip">General Medicine</span>
+                <span class="dept-chip">General Surgery</span>
+                <span class="dept-chip">Obstetrics &amp; Gynaecology</span>
+                <span class="dept-chip">Paediatrics</span>
+                <span class="dept-chip">Orthopaedics</span>
+                <span class="dept-chip">Ophthalmology</span>
+                <span class="dept-chip">Otorhinolaryngology (ENT)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>First Professional MBBS<span class="yr">University Examination: 1st Professional</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-meta"><span>Duration: 12 Months</span><span>1st Professional Exam</span></div>
+              <ul class="acc-list">
+                <li><span class="dot"></span><span>Foundation course - 1 week, remaining spread over 6 months.</span></li>
+                <li><span class="dot"></span><span>Anatomy, Physiology &amp; Biochemistry, Introduction to Community Medicine, Family Adoption Programme (FAP) through village outreach.</span></li>
+                <li><span class="dot"></span><span>Medicine, Humanities.</span></li>
+                <li><span class="dot"></span><span>Early Clinical Exposure.</span></li>
+                <li><span class="dot"></span><span>Attitude, Ethics, and Communication Module (AETCOM).</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>Second Professional MBBS<span class="yr">University Examination: 2nd Professional</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-meta"><span>Duration: 12 Months</span><span>2nd Professional Exam</span></div>
+              <ul class="acc-list">
+                <li><span class="dot"></span><span>Pathology, Microbiology, Pharmacology.</span></li>
+                <li><span class="dot"></span><span>Introduction to clinical subjects.</span></li>
+                <li><span class="dot"></span><span>Clinical postings, Family visits for FAP.</span></li>
+                <li><span class="dot"></span><span>AETCOM.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>Third Professional Part 1 MBBS<span class="yr">Incl. Electives, 1 month · University Examination: Final Professional Part 1</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-meta"><span>Duration: 12 Months</span><span>Final Professional Part 1</span></div>
+              <ul class="acc-list">
+                <li><span class="dot"></span><span>Community Medicine, Forensic Medicine and Toxicology, Medicine &amp; allied, Surgery &amp; allied, Paediatrics and Obstetrics &amp; Gynaecology.</span></li>
+                <li><span class="dot"></span><span>Family visits for FAP.</span></li>
+                <li><span class="dot"></span><span>Clinical postings.</span></li>
+                <li><span class="dot"></span><span>AETCOM.</span></li>
+                <li><span class="dot"></span><span>Electives - 1 month, 2 blocks, 15 days each.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span>Third Professional Part 2 MBBS<span class="yr">University Examination: Final Professional Part II</span></span>
+            <span class="acc-plus" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <div class="acc-meta"><span>Duration: 18 Months</span><span>Final Professional Part II</span></div>
+              <ul class="acc-list">
+                <li><span class="dot"></span><span>General Medicine, Dermatology, Psychiatry, Respiratory Medicine, Paediatrics, General Surgery, Orthopaedics, Otorhinolaryngology, Ophthalmology, Radiodiagnosis, Anaesthesiology, Obstetrics &amp; Gynaecology.</span></li>
+                <li><span class="dot"></span><span>Clinical postings.</span></li>
+                <li><span class="dot"></span><span>AETCOM.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="img/pesu_dark_logo.png" alt="PES University" style="height:40px;width:auto;"></div>
+        <p style="margin-top:16px;font-size:13.5px;line-height:1.7;max-width:34ch;color:rgba(255,255,255,0.55);">Electronic City Campus, Bengaluru — NAAC A+ Accredited, UGC &amp; NMC approved. Home to the MBBS programme and its 1000-bed teaching hospital.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Programme</h4>
+        <a href="#overview">Overview</a>
+        <a href="#structure">Curriculum</a>
+        <a href="#careers">Careers</a>
+        <a href="#fees">Fees</a>
+        <a href="#highlights">Highlights</a>
+      </div>
+      <div class="foot-col">
+        <h4>Admissions</h4>
+        <a href="https://admissions.pes.edu/registration/">Register</a>
+        <a href="#overview">Eligibility</a>
+        <a href="mailto:admissions@pes.edu">Email Admissions</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="contact-line">Electronic City Campus,<br>Bengaluru, Karnataka</div>
+        <a href="tel:08010297297">080-10-297297</a>
+        <a href="mailto:admissions@pes.edu">admissions@pes.edu</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PES University.</span>
+      <span>NAAC A+ Accredited · UGC &amp; NMC Approved</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); }, { passive:true });
+
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else { revealEls.forEach(el => el.classList.add('is-visible')); }
+
+  /* hero rotator */
+  (function(){
+    var slides = document.querySelectorAll('.hero-slide');
+    var dotsWrap = document.getElementById('heroDots');
+    if(!slides.length || !dotsWrap) return;
+    var dots = [];
+    slides.forEach(function(_, i){
+      var d = document.createElement('button');
+      d.className = 'hero-dot' + (i === 0 ? ' is-active' : '');
+      d.setAttribute('aria-label', 'Go to slide ' + (i+1));
+      d.addEventListener('click', function(){ goTo(i); });
+      dotsWrap.appendChild(d);
+      dots.push(d);
+    });
+    var current = 0, timer;
+    function goTo(i){ slides[current].classList.remove('is-active'); dots[current].classList.remove('is-active'); current = i; slides[current].classList.add('is-active'); dots[current].classList.add('is-active'); resetTimer(); }
+    function next(){ goTo((current + 1) % slides.length); }
+    function resetTimer(){ clearInterval(timer); timer = setInterval(next, 6000); }
+    resetTimer();
+  })();
+
+  /* mobile menu */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileBackdrop = document.getElementById('mobileBackdrop');
+  const closeMenu = document.getElementById('closeMenu');
+  function openMenu(){ mobileMenu.classList.add('open'); mobileBackdrop.classList.add('show'); }
+  function closeMenuFn(){ mobileMenu.classList.remove('open'); mobileBackdrop.classList.remove('show'); }
+  hamburger.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeMenuFn);
+  mobileBackdrop.addEventListener('click', closeMenuFn);
+  mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenuFn));
+
+  /* back to top */
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => { toTop.classList.toggle('show', window.scrollY > 480); }, { passive:true });
+
+  /* curriculum modals + accordions */
+  (function(){
+    var backdrops = document.querySelectorAll('.modal-backdrop');
+    var activeBackdrop = null;
+
+    backdrops.forEach(function(backdrop){
+      backdrop.querySelectorAll('.acc-item.is-open .acc-panel').forEach(function(panel){
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      });
+    });
+
+    function openModal(id){
+      var backdrop = document.getElementById(id);
+      if (!backdrop) return;
+      backdrop.classList.add('show');
+      document.body.classList.add('modal-open');
+      activeBackdrop = backdrop;
+    }
+    function closeModal(backdrop){
+      backdrop.classList.remove('show');
+      document.body.classList.remove('modal-open');
+      if (activeBackdrop === backdrop) activeBackdrop = null;
+    }
+
+    document.querySelectorAll('[data-modal-open]').forEach(function(btn){
+      btn.addEventListener('click', function(){ openModal(btn.getAttribute('data-modal-open')); });
+    });
+
+    backdrops.forEach(function(backdrop){
+      backdrop.addEventListener('click', function(e){ if (e.target === backdrop) closeModal(backdrop); });
+      backdrop.querySelectorAll('[data-modal-close]').forEach(function(btn){
+        btn.addEventListener('click', function(){ closeModal(backdrop); });
+      });
+      backdrop.querySelectorAll('.acc-item').forEach(function(item){
+        var trigger = item.querySelector('.acc-trigger');
+        var panel = item.querySelector('.acc-panel');
+        trigger.addEventListener('click', function(){
+          var wasOpen = item.classList.contains('is-open');
+          item.parentElement.querySelectorAll('.acc-item').forEach(function(other){
+            other.classList.remove('is-open');
+            other.querySelector('.acc-trigger').setAttribute('aria-expanded', 'false');
+            other.querySelector('.acc-panel').style.maxHeight = null;
+          });
+          if (!wasOpen){
+            item.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && activeBackdrop) closeModal(activeBackdrop);
+    });
+  })();
+
+</script>
+</body>
+</html>
