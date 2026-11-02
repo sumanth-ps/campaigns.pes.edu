@@ -1,0 +1,8 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - 'gcloud app deploy app.yaml --quiet'
+
+timeout: '1200s'
